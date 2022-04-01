@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Dev699vn/PiMachineLearning" > gitpath.txt
+echo "dangtin281/Azure_TREX" > gitpath.txt
 gitpath=$(head -1 gitpath.txt)
 
 wget https://raw.githubusercontent.com/$gitpath/main/ins_script.sh
