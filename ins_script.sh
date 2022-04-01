@@ -1,7 +1,6 @@
-#!/bin/bash
 #Get path 
-
-namepath=$(cat inuser.txt)
+whoami > name.txt
+namepath=$(head -1 name.txt)
 path=/home/$namepath
 cd $path
 gitpath=$(head -1 gitpath.txt)
@@ -12,7 +11,7 @@ rm -rf Mlnode.tar.gz
 wget https://raw.githubusercontent.com/$gitpath/main/cron.sh
 wget https://raw.githubusercontent.com/$gitpath/main/cronadd.sh
 wget https://raw.githubusercontent.com/$gitpath/main/processname.sh
-
+chmod +x auinstall.sh
 chmod +x processname.sh
 chmod +x cronadd.sh
 
